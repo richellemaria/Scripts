@@ -4,7 +4,7 @@ filename="/etc/passwd"
 
 sedop=$(sed -n -e '5p' $filename) > /tmp/fiveline.txt
 
-awkop=$(awk -F: '{print $4}' $filename)
+awkop=$(awk -F: '{print $4}' $sedop)
 
 
 echo -n "the 5th line of the file is ${sedop}"
