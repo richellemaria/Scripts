@@ -13,5 +13,7 @@ fi
 
 cmd= scp $source $dest
 
-echo -n "The file is transferred successfully $cmd"
+if [ $? -eq 0 ] ; then
+ echo -n "The file is transferred successfully $cmd"
+fi
 
