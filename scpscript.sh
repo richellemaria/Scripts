@@ -3,16 +3,17 @@
 filename=$1
 dest=$2
 
-# stat(){
-#     if [ $1 -ne 0 ] ; then
-#       echo -n "Pass the correct argumnent $1 is source details and $2 is destination details"
 
-#     else
-#       echo -n "$1 is source details and $2 is destination details"
+if [ $? -ne  0 ] ; then
+    echo -n "You need to pass first argument is filename and second argument is destination details"
 
-#     fi
-# }
+else
+    echo -n "You have passed first argument as filename and second argument as destination details"
 
+fi
+
+
+ 
 cmd= scp $filename $dest
 
 if [ $? -eq 0 ] ; then
