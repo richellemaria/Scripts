@@ -7,8 +7,8 @@ filename="/etc/passwd"
 
 
 
-# awkop=$(awk -F: '{print $4}' /tmp/fiveline.txt)
+awkop=$(awk -F: '{print $4}' /tmp/fiveline.txt)
 
 
 
-# echo  "the 4th field of 5th line of the file is ${awkop}"
+echo  "the 4th field of 5th line of the file is ${awkop}"
