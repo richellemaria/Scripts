@@ -2,7 +2,7 @@
 
 filename="/etc/passwd"
 
-sedop = sed -n -e '5p' $filename
+sedop = $(sed -n -e '5p' $filename)
 
 # awkop=awk -F: '{print $4}' 
 
