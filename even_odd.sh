@@ -1,8 +1,8 @@
 #!/bin/bash
 
-usernum=$1
+read -n
 
-num = $((expr $usernum/2))
+num = (expr $n%2)
 echo $num
 # if [ $num -eq 0 ] ; then
 #   echo -n "Is a even number"
