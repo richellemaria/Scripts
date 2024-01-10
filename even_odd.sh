@@ -1,6 +1,7 @@
 #!/bin/bash
 
-read -n
+echo "Enter a number"
+read n
 
 num = (expr $n%2)
 echo $num
