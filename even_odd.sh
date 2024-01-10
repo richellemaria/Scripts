@@ -3,7 +3,7 @@
 echo "Enter a number"
 read n
 
-num = (expr $n%2)
+num = expr $n%2
 echo $num
 # if [ $num -eq 0 ] ; then
 #   echo -n "Is a even number"
